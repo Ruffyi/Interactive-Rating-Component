@@ -1,2 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+:root {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-size: 62.5%; }
+
 body {
-  background-color: red; }
+  min-height: 100vh;
+  background-color: #121417; }

@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+:root {
+	box-sizing: border-box;
+	font-family: $ff-primary;
+	font-size: map-get($fs-map, 'primary');
+}
+
+body {
+	min-height: 100vh;
+	background-color: map-get($clr-map, 'color--very-dark-blue');
+}
