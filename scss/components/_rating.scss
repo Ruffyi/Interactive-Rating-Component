@@ -54,4 +54,12 @@
 		background-color: map-get($clr-map, 'color--star');
 		color: map-get($clr-map, 'color--orange');
 	}
+	&__overview {
+		display: none;
+	}
+}
+
+.active {
+	background-color: map-get($clr-map, 'color--orange');
+	color: map-get($clr-map, 'color--heading');
 }

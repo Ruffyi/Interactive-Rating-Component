@@ -88,6 +88,12 @@
     font-size: 1.3rem;
     background-color: #2d3844;
     color: #fb7413; }
+  .rating__overview {
+    display: none; }
+
+.active {
+  background-color: #fb7413;
+  color: #ffffff; }
 
 .btn {
   width: 100%;
