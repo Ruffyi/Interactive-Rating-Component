@@ -1,0 +1,27 @@
+.rating {
+	width: clamp(35rem, 40%, 45rem);
+	height: 50vh;
+	padding: 5rem;
+	background-image: linear-gradient(
+		to bottom,
+		map-get($clr-map, 'color--dark-blue'),
+		map-get($clr-map, 'color--very-dark-blue-gradient')
+	);
+	border-radius: 2rem;
+	&__icon {
+		display: inline-block;
+		padding: 1.3rem;
+		border-radius: 50%;
+		background-color: map-get($clr-map, 'color--star');
+	}
+	&__title {
+		margin: 2rem 0;
+		font-size: 2.8rem;
+		color: map-get($clr-map, 'color--heading');
+	}
+	&__description {
+		font-size: 1.5rem;
+		line-height: 1.7;
+		color: map-get($clr-map, 'color--medium-grey');
+	}
+}

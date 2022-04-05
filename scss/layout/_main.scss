@@ -1,0 +1,5 @@
+.main {
+	@include flex-mother();
+	min-height: 100vh;
+	background-color: map-get($clr-map, 'color--very-dark-blue');
+}
