@@ -10,7 +10,11 @@ $clr-map: (
 	'color--medium-grey': #7c8798,
 	'color--dark-blue': #252d37,
 	'color--very-dark-blue': #121417,
-	'color--very-dark-blue-gradient': #171a1d,
+	'color--very-dark-blue-gradient': #1b1d1f,
 	'color--star': #2d3844,
 	'color--heading': #ffffff,
+);
+
+$mq-breakpoints: (
+	'mobile': 58.125rem,
 );

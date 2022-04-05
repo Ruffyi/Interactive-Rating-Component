@@ -1,0 +1,16 @@
+.btn {
+	@extend %btn-placeholder;
+	width: 100%;
+	height: 4rem;
+	border-radius: 2rem;
+	background-color: map-get($clr-map, 'color--orange');
+	color: map-get($clr-map, 'color--heading');
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+	transition: all 0.3s;
+	&:hover {
+		color: map-get($clr-map, 'color--orange');
+		background-color: map-get($clr-map, 'color--heading');
+	}
+}

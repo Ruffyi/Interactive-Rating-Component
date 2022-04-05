@@ -1,6 +1,6 @@
 .rating {
 	width: clamp(35rem, 40%, 45rem);
-	height: 50vh;
+	min-height: 50vh;
 	padding: 5rem;
 	background-image: linear-gradient(
 		to bottom,
@@ -23,5 +23,35 @@
 		font-size: 1.5rem;
 		line-height: 1.7;
 		color: map-get($clr-map, 'color--medium-grey');
+	}
+	&__buttons {
+		@include flex-mother(row, center, space-between);
+		margin: 4rem 0;
+	}
+	&__button {
+		@extend %btn-placeholder;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		background-color: map-get($clr-map, 'color--star');
+		color: map-get($clr-map, 'color--light-grey');
+		transition: all 0.3s;
+		&:hover {
+			background-color: map-get($clr-map, 'color--orange');
+			color: map-get($clr-map, 'color--heading');
+		}
+		@include mq(map-get($mq-breakpoints, 'mobile')) {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+	&__score {
+		display: inline-block;
+		margin: 2rem 0;
+		padding: 1rem 3rem;
+		border-radius: 2rem;
+		font-size: 1.3rem;
+		background-color: map-get($clr-map, 'color--star');
+		color: map-get($clr-map, 'color--orange');
 	}
 }
